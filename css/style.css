@@ -1,0 +1,63 @@
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+
+body{background-image:url("/img/fondo2.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;}
+
+
+.header{background-color: rgba(0, 0, 0, 0.844) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    
+}
+
+
+
+.header .logo img{
+   
+height: 70px;
+width: auto;
+transition: all 0.3s;
+
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+
+.header .nav-links{
+    list-style: none;
+
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+.header .nav-links li a:hover{
+    color: gold;
+
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: aquamarine;
+    text-decoration: none;
+
+}
+
