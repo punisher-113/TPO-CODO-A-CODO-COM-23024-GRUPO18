@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/3d-printer.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="regsitroContacto.js"></script>
     <title>Laboratorio3D</title>
 </head>
 
@@ -32,6 +33,29 @@
 
     </header>
 
+    <div class="container_contacto">
+        
+        <form action="https://formsubmit.co/17157bb4a69bec790cfe688e85144099" method="POST"  onsubmit="actualizarCampoNext()">
+            <fieldset class="contacto">
+                <h3>Información de contacto</h3>
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="name" placeholder="Ingrese su nombre" type="text">
+                <label for="apellido">Apellido</label>
+                <input id="apellido" name="apellido" placeholder="Ingrese su apellido" type="text">
+                <label for="email">eMail</label>
+                <input id="email" name="email" placeholder="Ingrese su email" type="email">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario" rows="5"></textarea>
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" id="next" name="_next" value="">
+                <div>
+                    <input type="submit" value="ENVIAR">
+                    <input type="submit" value="RESET">    
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 
 </html>
