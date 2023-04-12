@@ -41,6 +41,6 @@ function actualizarCampoNext() {
     let next = document.getElementById("next");
     let usuario = document.getElementById("nombre");
 
-    next.value = location.origin + "/registrarContacto.html?nombre=" + usuario.value;
+    next.value = location.origin + "/registroContacto.html?nombre=" + usuario.value;
 }
 
