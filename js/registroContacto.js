@@ -48,7 +48,11 @@ function actualizarCampoNext() {
       ret += ret + listaCadena[i] + "/";
     }
 
+    alert(location.origin);
+    alert(ret);
+
     next.value = location.origin + "/" + ret + "registroContacto.html?nombre=" + usuario.value;
     //next.value = location.pathname + "/registroContacto.html?nombre=" + usuario.value;
+    alert(next.value);
 }
 
