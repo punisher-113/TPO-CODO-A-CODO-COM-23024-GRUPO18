@@ -42,17 +42,13 @@ function actualizarCampoNext() {
     let next = document.getElementById("next");
     let usuario = document.getElementById("nombre");
 
-    var listaCadena = String.prototype.split(location.pathname,"/");
-    for (let i=0; i<listaCadena.length-1;i++)
+    let listaCadena = location.pathname.split("/");
+    for (let i=0; i<listaCadena.length-1; i++)
     {
-      ret += ret + listaCadena[i] + "/";
+      ret += listaCadena[i] + "/";
     }
 
-    alert(location.origin);
-    alert(ret);
-
-    next.value = location.origin + "/" + ret + "registroContacto.html?nombre=" + usuario.value;
+    next.value = location.origin + ret + "registroContacto.html?nombre=" + usuario.value;
     //next.value = location.pathname + "/registroContacto.html?nombre=" + usuario.value;
-    alert(next.value);
 }
 
