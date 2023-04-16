@@ -38,9 +38,17 @@ function obtenerParametro(parametro){
 //      ret = página a redireccionar con parámetros      //
 // ===================================================== //
 function actualizarCampoNext() {
+    let ret = "";
     let next = document.getElementById("next");
     let usuario = document.getElementById("nombre");
 
-    next.value = location.origin + "/registroContacto.html?nombre=" + usuario.value;
+    var listaCadena = String.prototype.split(location.pathname,"/");
+    for (let i=0; i<listaCadena.length-1;i++)
+    {
+      ret += ret + listaCadena[i] + "/";
+    }
+
+    next.value = location.origin + "/" + ret + "registroContacto.html?nombre=" + usuario.value;
+    //next.value = location.pathname + "/registroContacto.html?nombre=" + usuario.value;
 }
 
