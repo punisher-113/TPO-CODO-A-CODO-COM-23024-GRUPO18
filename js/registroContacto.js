@@ -52,3 +52,31 @@ function actualizarCampoNext() {
     //next.value = location.pathname + "/registroContacto.html?nombre=" + usuario.value;
 }
 
+// ===================================================== //
+// Función: validarCampo                                 //
+// Descripción: Asigna el texto a mostrar cuando 'campo' //
+//              no tiene datos                           //
+// Parámetros:                                           //
+//      id = id del campo a validar                      //
+//      mensaje = texto a mostrar                        //
+// Retorno:                                              //
+//      nada                                             //
+// ===================================================== //
+function validarCampo(id, mensaje) {
+  var input = document.getElementById(id);
+
+  input.addEventListener('input', function(evt) {
+      this.setCustomValidity('');
+    });
+
+  input.addEventListener('invalid', function(evt) {
+      // Required
+      if (this.validity.valueMissing) {
+        this.setCustomValidity(mensaje);
+      } else {
+        if (!(this.validity.valid)) {
+          this.setCustomValidity(mensaje);
+        }  
+      }
+    });
+}

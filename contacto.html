@@ -13,7 +13,7 @@
     <title>Laboratorio3D</title>
 </head>
 
-<body>
+<body onload="AsignarValidaciones();">
     <header>
 
         <div class="logo"> <a href="index.html"><img src="img/LAB3DLOGO.png" alt="logo"> </a></div>
@@ -41,13 +41,13 @@
             <fieldset class="contacto">
                 <h3>Información de contacto</h3>
                 <label for="nombre">Nombre</label>
-                <input id="nombre" name="name" placeholder="Ingrese su nombre" type="text">
+                <input id="nombre" name="name" placeholder="Ingrese su nombre" type="text" minlength="1" maxlength="50" required>
                 <label for="apellido">Apellido</label>
-                <input id="apellido" name="apellido" placeholder="Ingrese su apellido" type="text">
+                <input id="apellido" name="apellido" placeholder="Ingrese su apellido" type="text" maxlength="50" required>
                 <label for="email">eMail</label>
-                <input id="email" name="email" placeholder="Ingrese su email" type="email">
+                <input id="email" name="email" placeholder="Ingrese su email" type="email" maxlength="50" required>
                 <label for="comentario">Comentario</label>
-                <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario" rows="5"></textarea>
+                <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario" rows="5"  maxlength="100" required></textarea>
                 
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" id="next" name="_next" value="">
@@ -58,6 +58,15 @@
             </fieldset>
         </form>
     </div>
+
+    <script type="text/javascript">
+        function AsignarValidaciones(){
+            validarCampo('nombre', 'Por favor complete el campo');
+            validarCampo('apellido', 'Por favor complete el campo');
+            validarCampo('email', 'Por favor complete el campo');
+            validarCampo('comentario', 'Por favor complete el campo');
+        }
+    </script>
 </body>
 
 </html>
