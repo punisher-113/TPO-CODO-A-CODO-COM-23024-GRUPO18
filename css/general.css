@@ -8,28 +8,48 @@ body {
 
    /*  background-image: url(/img/fondo2.jpg); */
 
-   background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-      align-content: space-between;
+    align-content: space-between;
 }
 
 
 /* Header */
-
 header {
     width: 100%;
-    height: 100%;
     height: 100px;
     background-color: rgba(0, 3, 2, 0.835);
-    padding: 0 50px;
+    padding: 0 0px;
     color: white;
     display: flex;
     align-items: center;
-  
-   
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 3, 2, 0.835);
+    padding: 0 0px;
+    color: white;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+footer .iconos {
+    padding-right: 50px;
+}
+
+footer i {
+    transition: all 0.3s;
+}
+
+footer i:hover {
+    transform: scale(1.2);
 }
 
 
@@ -50,18 +70,19 @@ header {
 
 
 /* Menu */
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 .menu a {
-    
     text-transform: uppercase;
     color: white;
     text-decoration: none;
-    padding: 0 50px;
+    padding: 0 5px; /* 0 5px; */
     transition: 0.4s;
-
-
 }
-
 
 .mostrar-menu,
 .esconder-menu {
@@ -69,7 +90,6 @@ header {
     cursor: pointer;
     display: none;
     transition: 0.4s;
-
 }
 
 .mostrar-menu {
@@ -80,14 +100,56 @@ header {
 .mostrar-menu:hover,
 .esconder-menu:hover {
     color: rgba(255, 217, 0, 0.714);
-    transform: scale(0.7);
+    transform: scale(0.9);
     transition: 0.4s;
-
 }
 
 #check {
     display: none;
 }
+
+/* Menu Hamburguesa */
+@media screen and (max-width: 800px) {
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+    
+    .menu {
+        display: inline;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 10, 7);
+        left: 0;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    
+    .menu a {
+        display: block;
+        padding: 20px;
+    }
+    
+    
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    
+    }
+    
+    #check:checked~.menu {
+        right: 0;
+        left: 100%;
+    }
+        
+}
+
 
 /* Responsive  */
 
