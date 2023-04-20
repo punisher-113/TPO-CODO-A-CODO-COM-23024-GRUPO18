@@ -16,7 +16,6 @@
 
 <body onload="AsignarValidaciones();">
     <header>
-
         <div class="logo"> <a href="index.html"><img src="img/LAB3DLOGO.png" alt="logo"> </a></div>
 
         <input type="checkbox" id="check" checked>
@@ -36,36 +35,48 @@
 
     </header>
 
-    <div class="container_contacto">
+    <main>
+        <div class="container_contacto">
         
-        <form action="https://formsubmit.co/19f4609bf22538f56ae06e3e68b776ac" method="POST"  onsubmit="actualizarCampoNext()">
-            <fieldset class="contacto">
-                <h3>Información de contacto</h3>
-                <label for="nombre">Nombre</label>
-                <input id="nombre" name="name" placeholder="Ingrese su nombre" type="text" minlength="1" maxlength="50" required>
-                <label for="apellido">Apellido</label>
-                <input id="apellido" name="apellido" placeholder="Ingrese su apellido" type="text" maxlength="50" required>
-                <label for="email">eMail</label>
-                <input id="email" name="email" placeholder="Ingrese su email" type="email" maxlength="50" required>
-                <label for="comentario">Comentario</label>
-                <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario" rows="5"  maxlength="100" required></textarea>
-                
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" id="next" name="_next" value="">
-                <div>
-                    <input type="submit" value="ENVIAR">
-                    <input type="submit" value="RESET">    
-                </div>
-            </fieldset>
-        </form>
-    </div>
+            <form action="https://formsubmit.co/19f4609bf22538f56ae06e3e68b776ac" method="POST"  onsubmit="actualizarCampoNext()">
+                <fieldset class="contacto">
+                    <h3>Información de contacto</h3>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="name" placeholder="Ingrese su nombre" type="text" minlength="1" maxlength="50" required>
+                    <label for="apellido">Apellido</label>
+                    <input id="apellido" name="apellido" placeholder="Ingrese su apellido" type="text" maxlength="50" required>
+                    <label for="email">eMail</label>
+                    <input id="email" name="email" placeholder="Ingrese su email" type="email" maxlength="50" required>
+                    <label for="comentario">Comentario</label>
+                    <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario" rows="5"  maxlength="100" required></textarea>
+                    
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" id="next" name="_next" value="">
+                    <div>
+                        <input type="submit" value="ENVIAR">
+                        <input type="submit" value="RESET">    
+                    </div>
+                </fieldset>
+            </form>
+        </div>    
+    </main>
     <footer>
-        <div class="iconos">
-            <a href="http://"><i class="fa-brands fa-whatsapp fa-3x" style="color: #dc2a13;"></i></a>
-            <a href="http://"><i class="fa-brands fa-discord fa-3x" style="color: #dc2a13;"></i></a> 
-            <a href="http://"><i class="fa-brands fa-instagram fa-3x" style="color: #dc2a13;"></i></a> 
-        </div>
-    </footer>
+        <div class="footparr">
+           <p>Suipacha 2972, Turdera, Buenos Aires, Argentina.             +54 9 11 3260 0263
+              info@laboratorio3d.com.ar
+              Lunes a Viernes 9:00hs a 18:00hs</p>
+       </div>
+       <div class="iconos_grandes">
+           <a href="http://"><i class="fa-brands fa-whatsapp fa-fw fa-3x" style="color: #dc2a13;"></i></a>
+           <a href="http://"><i class="fa-brands fa-discord fa-fw fa-3x" style="color: #dc2a13;"></i></a> 
+           <a href="http://"><i class="fa-brands fa-instagram fa-fw fa-3x" style="color: #dc2a13;"></i></a> 
+       </div>
+       <div class="iconos_chicos">
+           <a href="http://"><i class="fa-brands fa-whatsapp fa-fw fa-2x" style="color: #dc2a13;"></i></a>
+           <a href="http://"><i class="fa-brands fa-discord fa-fw fa-2x" style="color: #dc2a13;"></i></a> 
+           <a href="http://"><i class="fa-brands fa-instagram fa-fw fa-2x" style="color: #dc2a13;"></i></a> 
+       </div>
+   </footer>
 
     <script type="text/javascript">
         function AsignarValidaciones(){

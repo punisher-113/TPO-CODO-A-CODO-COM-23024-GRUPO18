@@ -1,25 +1,39 @@
 
 /* 
----------------------------------------------------
--  ESTILO PARA TAMAÑOS DE PANTALLA DE HASTA 414px -
----------------------------------------------------
+===================================================
+=  ESTILO PARA TAMAÑOS DE PANTALLA DE HASTA 414px =
+===================================================
 */
 
-/* TARJETAS */
+/* --------
+   - BODY -
+   -------- */
+ 
+ /* ----------
+    - HEADER -
+    ---------- */
+ /* --------
+    - MAIN -
+    -------- */
+
+/* Tarjetas */
 .container_cards{
     width: 100%;
     height: 50%;
 
     flex-direction: column;
     flex-wrap: nowrap;
-
 } 
 
 .card {
     width: auto;
 }
 
-/* CONTACTO */
+/* Contacto */
 .container_contacto {
     width: auto;
 }
+
+/* ----------
+   - FOOTER -
+   ---------- */
