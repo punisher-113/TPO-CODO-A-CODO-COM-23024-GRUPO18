@@ -23,6 +23,11 @@ body {
     background-position: center center;
     background-attachment: fixed;
     align-content: space-between;
+
+    /* Para mantener el footer al final, sin importar el contenido del body */
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* ----------
@@ -421,6 +426,9 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    /* Para mantener el footer al final, sin importar el contenido del body */
+    margin-top: auto;
 }
 
 /* Iconos */
