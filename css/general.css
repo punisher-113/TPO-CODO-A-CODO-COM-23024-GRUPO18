@@ -35,6 +35,39 @@ body {
    ---------- */
 header {
     width: 100%;
+    height: auto;
+}
+
+/* Informacion de contacto en el header */
+.contacto_header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.contacto_header a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color:#b63212;
+    margin: 10px;
+    padding: 0px;
+}
+
+.contacto_header i {
+    transition: all 0.3s;
+    color:#b63212;
+}
+
+.contacto_header i:hover {
+    transform: scale(1.2);
+}
+
+/* Navegación y logo */
+.navegacion {
+    width: 100%;
     height: 100px;
     background-color: rgba(0, 3, 2, 0.835);
     padding: 0 0px;
@@ -45,12 +78,10 @@ header {
 
 /* Logo Imagen */
 .logo img {
-
     height: 80px;
     width: auto;
     transition: all 0.3s;
     margin: 10px;
-
 }
 
 .logo img:hover {
@@ -94,6 +125,33 @@ header {
 
 #check {
     display: none;
+}
+
+.info_header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info_header p {
+    font-size: 0.9em;
+    text-decoration: none;
+    color:#b63212;
+}
+
+.info_header i {
+    padding: 10px;
+    margin: 10px 0px;
+    color:#b63212;
+    transition: all 0.3s;
+}
+
+.info_header i:hover {
+    transform: scale(1.2);
 }
 
 /* Menu Hamburguesa */
@@ -144,6 +202,33 @@ main {
     height: 100%; 
 }
 
+.titulo {
+    margin: 20px 10px;
+    padding: 2px;
+    width: fit-content;
+    height: auto;
+    background-color:black;
+    border-radius: 10px;
+    transition: all 400ms ease;
+}
+
+.titulo:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-5%);
+}
+
+.titulo h1 {
+    padding: 5px 10px;
+    color:#F6F1E9;    
+    background-color:#E25822;
+}
+
+.titulo h2 {
+    padding: 5px 10px;
+    color:#F6F1E9;    
+    background-color:#E25822;
+}
+
 /* Tarjetas */
 .container_cards{
     margin: auto;
@@ -158,7 +243,6 @@ main {
 }
 
 .card{
-    
     padding: 2px;
     margin: 10px;
     border-radius: 10px;
@@ -172,9 +256,8 @@ main {
 }
 
 .card:hover{
- box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
-transform: translatey(-1%);
-
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
 }
 
 .card img{
@@ -243,10 +326,8 @@ transform: translatey(-1%);
 }
 
 .card .contenido a:hover{
-
     background: rgb(203, 203, 203);
     color:#5e0202;
-
 }
 
 /* Contacto */
@@ -329,6 +410,77 @@ transform: translatey(-1%);
 }
 
 /* Contenedores de Cómo funciona */
+.contenedor_como_funciona {
+    color: #edeaea;
+    background: rgba(0, 0, 0, 0.808);
+    text-align: justify;
+    padding: 20px;
+    margin: 20px 7%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
+    transition: all 400ms ease;
+}
+
+.contenedor_como_funciona:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
+.contenedor_como_funciona .box_izquierda {
+    margin: 20px 5% 20px 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+ }
+
+.contenedor_como_funciona .box_derecha {
+    margin: 20px 1% 20px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+.contenedor_como_funciona .box_derecha h3 {
+    text-align: right;
+}
+
+.contenedor_como_funciona .box_general{ 
+    padding: 15px;
+    text-align: justify;
+}
+
+.contenedor_como_funciona img {
+    height: 150px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 610px) {
+    .contenedor_como_funciona .box_izquierda {
+        margin: 20px 1% 20px 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor_como_funciona .box_derecha {
+        margin: 20px 1% 20px 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .contenedor_como_funciona .box_derecha h3 {
+        text-align: left;
+    }
+    
+}
+
+
 .contenedorcf  {
     color: #edeaea;
     text-align: center;
@@ -383,16 +535,24 @@ transform: translatey(-1%);
     max-height: 100%;
 }
 
-.contenedorsn  {
+/* Contenedor Sobre Nosotros */
+.contenedor_sobre_nosotros {
     color: #edeaea;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
+    background: rgba(0, 0, 0, 0.808);
+    text-align: justify;
+    padding: 20px;
+    margin: 20px 7%;
     border-radius: 10px;
     box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
+    transition: all 400ms ease;
 }
 
-.contenedorsn #pasos {
+.contenedor_sobre_nosotros:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
+.contenedor_sobre_nosotros #pasos {
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
@@ -401,27 +561,59 @@ transform: translatey(-1%);
     overflow: hidden;
 }
 
-.box1{
-    padding: 15px;
-    text-align: left;
-    margin: auto;
+.contenedor_sobre_nosotros .box_izquierda {
+    margin: 20px 5% 20px 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 
-.box2{
-    padding: 15px;
-    text-align: right;
-    margin: auto;
+.contenedor_sobre_nosotros .box_derecha {
+    margin: 20px 1% 20px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
 }
 
+.contenedor_sobre_nosotros .box_general{ 
+    padding: 15px;
+    text-align: justify;
+}
+
+.contenedor_sobre_nosotros img {
+    height: 150px;
+    width: 200px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 610px) {
+    .contenedor_sobre_nosotros .box_izquierda {
+        margin: 20px 1% 20px 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor_sobre_nosotros .box_derecha {
+        margin: 20px 1% 20px 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+}
 
 /* ----------
    - FOOTER - 
    ---------- */
 footer {
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: rgba(0, 3, 2, 0.835);
-    padding: 0 0px;
+    padding: 10px 0px;
     color: #b63212;
     display: flex;
     justify-content: space-around;
@@ -445,6 +637,7 @@ footer .iconos_chicos {
 }
 
 footer .iconos_grandes i {
+    color: #b63212;
     transition: all 0.3s;
 }
 
@@ -467,6 +660,7 @@ footer .iconos_grandes i:hover {
     }
     
     footer .iconos_chicos i {
+        color: #b63212;
         transition: all 0.3s;
     }
     
@@ -475,7 +669,7 @@ footer .iconos_grandes i:hover {
     }
 }
 
-.footparr{
+.footparr {
 /*    height: 0px;
     background-color: rgba(0, 3, 2, 0.835);
     padding: 50px;
@@ -486,7 +680,6 @@ footer .iconos_grandes i:hover {
     font-size: small;
     text-align: left;
 */
-    background-color: rgba(0, 3, 2, 0.835);
     padding: 10px;
     color: #b63212;
     text-align: center;
