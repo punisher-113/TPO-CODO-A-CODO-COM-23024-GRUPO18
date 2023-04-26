@@ -44,8 +44,10 @@ header {
     height: auto;
     background-color: black;
     padding: 10px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     text-align: center;
-    align-items: center;
 }
 
 .contacto_header a {
@@ -131,7 +133,6 @@ header {
     width: 100%;
     height: auto;
     background-color: black;
-    padding: 0 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -202,6 +203,16 @@ main {
     height: 100%; 
 }
 
+h2 {
+    color: #e10d0d;
+    margin: 0;
+}
+
+h3 { 
+    color: #e10d0d;
+    margin: 0px;
+}
+
 .titulo {
     margin: 20px 10px;
     padding: 2px;
@@ -229,383 +240,6 @@ main {
     background-color:#E25822;
 }
 
-/* Tarjetas */
-.container_cards{
-    margin: auto;
-    margin-top: 10px;
-    width: 75%;
-    height: 75%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card{
-    padding: 2px;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.808);
-    color: aliceblue;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    width: 414px;    
-}
-
-.card:hover{
-    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
-    transform: translatey(-1%);
-}
-
-.card img{
-    width: 100%;
-    height: auto;
-   
-}
-.card .contenido{
-    padding: 15px;
-    text-align: center;
-    margin: auto;
-}
-
-/* Contenido del card */
-.card .contenido p{
-
-    line-height: 1.5;
-    color: #edeaea;
-    text-align: left;
-}
-
-/* Titurlo del card */
-.card .contenido h3{
-
-    line-height: 1.5;
-    color: #e10d0d;
-    margin-bottom: 15px;
-  
-}
-
-.card .video {
-	position: relative;
-	padding-bottom: 56.25%; 
-	padding-top: 25px;
-	height: 0;
-}
-
-.card .video iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.card .contenido a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #5e0202;
-    color: rgb(203, 203, 203);
-    border: 1px solid ;
-    border-radius: 4px;
-    transition: all 400ms ease;
-
-}
-
-.card img{
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- 
-
-}
-
-.card .contenido a:hover{
-    background: rgb(203, 203, 203);
-    color:#5e0202;
-}
-
-/* Contacto */
-.container_contacto {
-    margin: auto;
-    margin-top: 10px;
-    width: 75%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-}
-
-.contacto {
-    padding: 2px;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.808);
-    color: aliceblue;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-}
-
-.contacto h3 {
-    line-height: 1.5;
-    color: #e10d0d;
-    margin: 15px;
-}
-
-.contacto label {
-    display: block;
-    padding: 2px;
-    margin: 5px;
-}
-
-.contacto input[type="text"], input[type="email"], textarea {
-    padding: 5px;
-    margin: 10px;
-    width: 90%;
-}
-
-.contacto input[type="submit"], input[type="reset"] {
-    padding: 5px;
-    margin: 30px 16px 10px 16px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #5e0202;
-    color: rgb(203, 203, 203);
-    border: 1px solid ;
-    border-radius: 4px;
-    transition: all 400ms ease;
-}
-
-.contacto input[type="submit"]:hover, input[type="reset"]:hover{
-    background: rgb(203, 203, 203);
-    color:#5e0202;
-}
-
-/* Contenedor del mensaje de registro de contacto */
-.container_registro_contacto {
-    margin: auto;
-    margin-top: 10px;
-    width: 75%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-}
-
-.registro_contacto {
-    padding: 2px;
-    margin: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.808);
-    color: aliceblue;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-}
-
-/* Contenedores de Cómo funciona */
-.contenedor_como_funciona {
-    color: #edeaea;
-    background: rgba(0, 0, 0, 0.808);
-    text-align: justify;
-    padding: 20px;
-    margin: 20px 7%;
-    border-radius: 10px;
-    box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
-    transition: all 400ms ease;
-}
-
-.contenedor_como_funciona:hover{
-    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
-    transform: translatey(-1%);
-}
-
-.contenedor_como_funciona .box_izquierda {
-    margin: 20px 5% 20px 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
- }
-
-.contenedor_como_funciona .box_derecha {
-    margin: 20px 1% 20px 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-}
-
-.contenedor_como_funciona .box_derecha h3 {
-    text-align: right;
-}
-
-.contenedor_como_funciona .box_general{ 
-    padding: 15px;
-    text-align: justify;
-}
-
-.contenedor_como_funciona img {
-    height: 150px;
-    width: 200px;
-    border-radius: 25px;
-}
-
-@media screen and (max-width: 610px) {
-    .contenedor_como_funciona .box_izquierda {
-        margin: 20px 1% 20px 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor_como_funciona .box_derecha {
-        margin: 20px 1% 20px 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }    
-
-    .contenedor_como_funciona .box_derecha h3 {
-        text-align: left;
-    }
-    
-}
-
-
-.contenedorcf  {
-    color: #edeaea;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
-}
-
-.contenedorcf p {
-    padding: 10px;
-    margin: 25px;
-    border-radius: 5px;
-    background: rgba(44, 8, 8, 0.7);
-    color: aliceblue;
-    cursor: text;
-    text-align: justify;
-}
-
-.contenedorcf h2 {
-    color: #edeaea;
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    border-top: rgba(50, 0, 30, 0.2) solid;
-    border-radius: 7.5px;
-    box-shadow: 0px 20px 10px rgba(50, 0, 30, 1);
-}
-
-.contenedorcf #pasos {
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    background: rgba(92, 12, 12, 0.5);
-    color: aliceblue;
-    overflow: hidden;
-}
-
-#disenio, #impresion {
-    float: left;
-    border-radius: 25px;
-    padding-right: 10px;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#config {
-    float: right;
-    border-radius: 25px;
-    padding-left: 10px;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-/* Contenedor Sobre Nosotros */
-.contenedor_sobre_nosotros {
-    color: #edeaea;
-    background: rgba(0, 0, 0, 0.808);
-    text-align: justify;
-    padding: 20px;
-    margin: 20px 7%;
-    border-radius: 10px;
-    box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
-    transition: all 400ms ease;
-}
-
-.contenedor_sobre_nosotros:hover{
-    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
-    transform: translatey(-1%);
-}
-
-.contenedor_sobre_nosotros #pasos {
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    background: rgba(92, 12, 12, 0.5);
-    color: aliceblue;
-    overflow: hidden;
-}
-
-.contenedor_sobre_nosotros .box_izquierda {
-    margin: 20px 5% 20px 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
-
-.contenedor_sobre_nosotros .box_derecha {
-    margin: 20px 1% 20px 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-}
-
-.contenedor_sobre_nosotros .box_general{ 
-    padding: 15px;
-    text-align: justify;
-}
-
-.contenedor_sobre_nosotros img {
-    height: 150px;
-    width: 200px;
-    border-radius: 25px;
-}
-
-@media screen and (max-width: 610px) {
-    .contenedor_sobre_nosotros .box_izquierda {
-        margin: 20px 1% 20px 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor_sobre_nosotros .box_derecha {
-        margin: 20px 1% 20px 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }    
-}
-
 /* ----------
    - FOOTER - 
    ---------- */
@@ -621,6 +255,13 @@ footer {
 
     /* Para mantener el footer al final, sin importar el contenido del body */
     margin-top: auto;
+}
+
+footer .info_footer {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #b63212;
+    text-align: center;
 }
 
 /* Iconos */
@@ -646,7 +287,7 @@ footer .iconos_grandes i:hover {
 }
 
 /* Iconos vertical */ 
-@media screen and (max-width: 523px) {
+@media screen and (max-width: 690px) {
     footer .iconos_grandes {
         display: none;
     }
@@ -667,20 +308,4 @@ footer .iconos_grandes i:hover {
     footer .iconos_chicos i:hover {
         transform: scale(1.2);
     }
-}
-
-.footparr {
-/*    height: 0px;
-    background-color: rgba(0, 3, 2, 0.835);
-    padding: 50px;
-    color: #b63212;
-    display:flex;
-    justify-content:left; 
-    align-items:flex-end;
-    font-size: small;
-    text-align: left;
-*/
-    padding: 10px;
-    color: #b63212;
-    text-align: center;
 }

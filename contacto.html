@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/3d-printer.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/celular.css" media="screen and (max-width: 414px)">
-    <link rel="stylesheet" href="css/tableta.css" media="screen and (min-width: 414px) and (max-width: 1280px)">
+    <link rel="stylesheet" href="css/contacto.css">
     <script type="text/javascript" src="js/registroContacto.js"></script>
     <script src="https://kit.fontawesome.com/bd57c9676d.js" crossorigin="anonymous"></script>
     <title>Laboratorio3D</title>
@@ -17,7 +16,7 @@
 <body onload="AsignarValidaciones();">
     <header>
         <div class="contacto_header">
-            <a href="mailto:info@laboratorio3d.com.ar" title="Enviar eMail"><i class="fa-regular fa-envelope"></i> info@laboratorio3d.com.ar</a>
+            <a href="mailto:grupo18.codoacodo@gmail.com" title="Enviar eMail"><i class="fa-regular fa-envelope"></i> grupo18.codoacodo@gmail.com</a>
             <a href="https://api.whatsapp.com/send?phone=541132600263&text=Hola,%20te%20podemos%20asesoramos%20por%20whatsapp%20a%20gestiona%20tu%20compra%20por%20este%20canal" title="Contactar por Whatsapp"><i class="fa-brands fa-whatsapp"></i> (+54) 9 11 3260 0263</a>
         </div>
         <div class="navegacion">
@@ -39,7 +38,7 @@
             </nav>    
         </div>
         <div class="info_header">
-            <a href="index.html"><i class="fa-solid fa-house fa-lg"></i></a><p>-> Constacto</p>
+            <a href="index.html"><i class="fa-solid fa-house fa-lg"></i></a><p>-> Contacto</p>
         </div>
     </header>
 
@@ -47,18 +46,18 @@
         <div class="titulo">
             <h1>CONTACTO</h1>
         </div>
-        <div class="container_contacto">        
-            <form action="https://formsubmit.co/19f4609bf22538f56ae06e3e68b776ac" method="POST"  onsubmit="actualizarCampoNext()">
-                <fieldset class="contacto">
-                    <h3>Información de contacto</h3>
+        <div class="contenedor_contacto">        
+            <form class="contacto" action="https://formsubmit.co/19f4609bf22538f56ae06e3e68b776ac" method="POST"  onsubmit="actualizarCampoNext()">
+                <fieldset class="contenedor_contacto_campos">
+                    <h3>Información de contacto</h2>
                     <label for="nombre">Nombre</label>
-                    <input id="nombre" name="name" placeholder="Ingrese su nombre" type="text" minlength="1" maxlength="50" required>
+                    <input id="nombre" name="name"  title="Ingrese su nombre" placeholder="Ingrese su nombre" type="text" minlength="1" maxlength="50" required>
                     <label for="apellido">Apellido</label>
-                    <input id="apellido" name="apellido" placeholder="Ingrese su apellido" type="text" maxlength="50" required>
+                    <input id="apellido" name="apellido" title="Ingrese su apellido" placeholder="Ingrese su apellido" type="text" maxlength="50" required>
                     <label for="email">eMail</label>
-                    <input id="email" name="email" placeholder="Ingrese su email" type="email" maxlength="50" required>
+                    <input id="email" name="email" title="Ingrese su email" placeholder="Ingrese su email" type="email" maxlength="50" required>
                     <label for="comentario">Comentario</label>
-                    <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario" rows="5"  maxlength="100" required></textarea>
+                    <textarea id="comentario" name="comentario" title="Ingrese su comentario" placeholder="Ingrese su comentario" rows="5"  maxlength="100" required></textarea>
                     
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" id="next" name="_next" value="">
@@ -68,21 +67,41 @@
                     </div>
                 </fieldset>
             </form>
+            <div class="varios">
+                <div class="grilla">
+                    <div class="mapa">
+                        <h3>¿Dónde estamos?</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4238.41761117342!2d-58.41097613449476!3d-34.79238534486966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd304d654b881%3A0x2dd39e2939362549!2sSuipacha%2C%20Turdera%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1682523400456!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                    </div>
+                    <div class="horario">
+                        <h3>Nuestros horarios</h3>
+                        <p>Lunes a Viernes 9:00hs a 18:00hs</p>
+                    </div>
+                    <div class="redes_sociales">
+                        <h3>Seguinos en</h3>
+                        <a href="http://" title="Contactar por Discord"><i class="fa-brands fa-discord fa-fw fa-3x" ></i></a> 
+                        <a href="http://" title="Nuestro Instagram"><i class="fa-brands fa-instagram fa-fw fa-3x"></i></a> 
+                        <a href="http://" title="Nuestro FaceBook"><i class="fa-brands fa-facebook fa-fw fa-3x" ></i></a> 
+                    </div>
+                </div> 
+            </div>
         </div>    
     </main>
     <footer>
-        <div class="footparr">
-           <p>Suipacha 2972, Turdera, Buenos Aires, Argentina.             +54 9 11 3260 0263
+        <div class="info_footer">
+            <p>Suipacha 2972, Turdera, Buenos Aires, Argentina.             +54 9 11 3260 0263
               info@laboratorio3d.com.ar
               Lunes a Viernes 9:00hs a 18:00hs</p>
        </div>
        <div class="iconos_grandes">
+            <a href="mailto:grupo18.codoacodo@gmail.com" title="Enviar eMail"><i class="fa-regular fa-envelope fa-fw fa-3x"></i></a>
             <a href="https://api.whatsapp.com/send?phone=541132600263&text=Hola,%20te%20podemos%20asesoramos%20por%20whatsapp%20a%20gestiona%20tu%20compra%20por%20este%20canal" title="Contactar por Whatsapp"><i class="fa-brands fa-whatsapp fa-fw fa-3x"></i></a>
             <a href="http://" title="Contactar por Discord"><i class="fa-brands fa-discord fa-fw fa-3x" ></i></a> 
             <a href="http://" title="Nuestro Instagram"><i class="fa-brands fa-instagram fa-fw fa-3x"></i></a> 
             <a href="http://" title="Nuestro FaceBook"><i class="fa-brands fa-facebook fa-fw fa-3x" ></i></a> 
         </div>
         <div class="iconos_chicos">
+            <a href="mailto:grupo18.codoacodo@gmail.com" title="Enviar eMail"><i class="fa-regular fa-envelope fa-fw fa-2x"></i></a>
             <a href="https://api.whatsapp.com/send?phone=541132600263&text=Hola,%20te%20podemos%20asesoramos%20por%20whatsapp%20a%20gestiona%20tu%20compra%20por%20este%20canal" title="Contactar por Whatsapp"><i class="fa-brands fa-whatsapp fa-fw fa-2x"></i></a>
             <a href="http://" title="Contactar por Disord"><i class="fa-brands fa-discord fa-fw fa-2x"></i></a> 
             <a href="http://" title="Nuestro Instagram"><i class="fa-brands fa-instagram fa-fw fa-2x"></i></a> 

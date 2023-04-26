@@ -1,0 +1,147 @@
+/* 
+===================================================
+=        ESTILO PARA LA PÁGINA contacto.html      =
+===================================================
+*/
+
+.contenedor_contacto {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contacto {
+    width: 50%;
+    margin: 0 3% 0 7%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.808);
+    transition: all 400ms ease;
+    box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
+    color: #edeaea;
+    text-align: justify;
+}
+
+ .contacto:hover {
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
+.contenedor_contacto_campos {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.contacto label {
+    display: block;
+    padding: 2px;
+    margin: 5px;
+}
+
+.contacto input[type="text"], input[type="email"], textarea {
+    padding: 5px;
+    margin: 10px;
+    width: 90%;
+}
+
+.contacto input[type="submit"], input[type="reset"] {
+    padding: 5px;
+    margin: 30px 16px 10px 16px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #5e0202;
+    color: rgb(203, 203, 203);
+    border: 1px solid ;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.contacto input[type="submit"]:hover, input[type="reset"]:hover{
+    background: rgb(203, 203, 203);
+    color:#5e0202;
+}
+
+.varios {
+    width: 50%;
+    margin: 0 7% 0 3%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.808);
+    box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
+    transition: all 400ms ease;
+    color: #edeaea;
+    display: grid;
+    text-align: justify;
+}
+
+.varios h3 {
+    margin: 0 0 15px 0;
+}
+
+.varios .grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.varios .grilla .mapa { 
+    grid-area: 1 / 1 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.varios .grilla .horario {
+    grid-area: 2 / 1 / 3 / 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.varios .grilla .redes_sociales {
+    grid-area: 2 / 2 / 3 / 3; 
+    display: block;
+    text-align: center;
+    padding: 10% 0 10% 0;
+}
+    
+.varios .grilla .redes_sociales i {
+    transition: all 0.3s;
+    color:#b63212;
+}
+
+.varios .grilla .redes_sociales i:hover {
+    transform: scale(1.2);
+}
+
+.varios:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor_contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto {
+        width: 90%;
+        margin: 0 3% 10px 3%;
+    }
+    
+    .varios {
+        width: 90%;
+        margin: 10px 3% 0 3%;
+    }
+    
+}
