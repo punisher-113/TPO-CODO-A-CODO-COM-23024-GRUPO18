@@ -27,6 +27,11 @@
     transform: translatey(-1%);
 }
 
+.registro_contacto .usuario {
+    font-size: 110%;
+    color:#b63212;
+}
+
 .varios {
     width: 50%;
     margin: 0 7% 0 3%;

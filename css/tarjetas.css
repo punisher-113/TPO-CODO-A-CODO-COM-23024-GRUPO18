@@ -47,7 +47,6 @@
 
 /* Contenido del card */
 .card .contenido p{
-
     line-height: 1.5;
     color: #edeaea;
     text-align: left;
@@ -89,7 +88,6 @@
 }
 
 .card img{
-
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -10,7 +10,7 @@ function procesarRegistroContacto() {
   let usuario = obtenerParametro('nombre');
   let mensajeObj = document.getElementById('mensaje');
 
-  mensajeObj.innerHTML = usuario + " muchas gracias por contactarnos";;
+  mensajeObj.innerHTML = `<p class="usuario">${usuario}</p><p>¡¡Muchas gracias por contactarnos!!</p><p>A la brevedad nos estaremos comunicando.`;
 }
 
 // ===================================================== //
