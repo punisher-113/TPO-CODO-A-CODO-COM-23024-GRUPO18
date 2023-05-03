@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/tarjetas.css">
     <link rel="stylesheet" href="css/styleslider.css">
+    <link rel="stylesheet" href="css/productos.css">
 
     <script src="https://kit.fontawesome.com/bd57c9676d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/general.js"></script>
+    <script type="text/javascript" src="js/productos.js"></script>
 
-  
     <title>Laboratorio3D</title>
 </head>
 
-<body>
-
-    
+<body onload="mostrarProductos(buscarProductos(obtenerParametro('buscar')))">
     <header>
         <div class="contacto_header">
             <a href="mailto:info@laboratorio3d.com.ar" title="Enviar eMail"><i class="fa-regular fa-envelope"></i> info@laboratorio3d.com.ar</a>
@@ -53,164 +53,20 @@
             <h1>PRODUCTOS</h1>
         </div>
 
+        <div class="contenedor_busqueda"> 
+            <form class="busqueda" method="get" action="productos.html">
+                <input id="buscar" name="buscar" title="Ingrese una palabra clave" placeholder="Buscar productos"  type="text" >
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>                
+            </form>
+        </div>
+
+        <div class="contenedor_mensaje">
+        </div>
+
         <div class="container_cards">
-            <div class="card">
-                <figure>
 
-                 
-                    <div class="slider-frame">
-                        <ul>
-                            <li><img src="img/Artorias/artorias1.jpg" alt=""></li>
-                            <li><img src="img/Artorias/artorias3.jpg" alt=""></li>
-                            <li><img src="img/Artorias/artorias2.jpg" alt=""></li>
-                            <li><img src="img/Artorias/artorias1.jpg" alt=""></li>
-                           
-                        </ul>
-                    </div>
-               
-             
-                </figure>
-                <div class="contenido">
-                    <h3>Artorias</h3>
-                    <p> Franquicia: Dark Souls<br>
-                        Tamaño: 20x15x10cm <br>
-                        Material: Plastico PLA+ <br>
-                        Altura: 20cm <br>
-                    </p><a href="#">Comprar</a>
-                </div>
-            </div>
-    
-            <div class="card">
-                <figure>
-                    <div class="slider-frame">
-                        <ul>
-                            <li><img src="img/Gatoconbotas/gato1.jpg" alt=""></li>
-                            <li><img src="img/Gatoconbotas/gato2.jpg" alt=""></li>
-                            <li><img src="img/Gatoconbotas/gato3.jpg" alt=""></li>
-                            <li><img src="img/Gatoconbotas/gato1.jpg" alt=""></li>
-                           
-                        </ul>
-                    </div>
-                </figure>
-                <div class="contenido">
-                    <h3>Gato con Botas y Lobo </h3>
-                    <p> Franquicia: Gato con Botas<br>
-                        Tamaño Gato: 12x5x5cm <br>
-                        Tamaño Lobo: 17x8x8cm <br>
-                        Material: Resina UV <br>
-                        Altura: 20cm <br>
-                    </p><a href="#">Comprar</a>
-                </div>
-            </div>
-    
-       
-    
-            <div class="card">
-                <figure>
-                    <div class="slider-frame">
-                        <ul>
-                            <li><img src="img/Android18/android1.jpg" alt=""></li>
-                            <li><img src="img/Android18/android2.jpg" alt=""></li>
-                            <li><img src="img/Android18/android3.jpg" alt=""></li>
-                            <li><img src="img/Android18/android4.jpg" alt=""></li>
-                           
-                        </ul>
-                    </div>
-                </figure>
-                <div class="contenido">
-                    <h3>Androide 18</h3>
-                    <p> Franquicia: Dragon Ball Z<br>
-                        Tamaño: 20x10x10cm <br>
-                        Material: Plastico PLA+ y ResinaUV <br>
-                        Altura: 20cm <br>
-                    </p>
-    
-                    <a href="#">Comprar</a>
-                </div>
-    
-            </div>
-    
-           
+        </div>
 
-            <div class="card">
-                <figure>
-                    <div class="slider-frame">
-                        <ul>
-                            <li><img src="img/Batman/batman1.jpg" alt=""></li>
-                            <li><img src="img/Batman/batman2.jpg" alt=""></li>
-                            <li><img src="img/Batman/batman3.jpg" alt=""></li>
-                            <li><img src="img/Batman/batman4.jpg" alt=""></li>
-                           
-                        </ul>
-                    </div>
-                </figure>
-                <div class="contenido">
-                    <h3>Batman</h3>
-                    <p> Franquicia: DC - Batman <br>
-                        Tamaño: 20x15x15cm <br>
-                        Material: Plastico PLA+ y ResinaUV <br>
-                        Altura: 20cm <br>
-                    </p>
-    
-                    <a href="#">Comprar</a>
-                </div>
-    
-            </div>
-
-            <div class="card">
-                <figure>
-                    <div class="slider-frame">
-                        <ul>
-                            <li><img src="img/Crash/Crash1.jpg" alt=""></li>
-                            <li><img src="img/Crash/Crash2.jpg" alt=""></li>
-                            <li><img src="img/Crash/Crash3.jpg" alt=""></li>
-                            <li><img src="img/Crash/Crash4.jpg" alt=""></li>
-                           
-                        </ul>
-                    </div>
-                </figure>
-                <div class="contenido">
-                    <h3>Crash Bandicoot</h3>
-                    <p> Franquicia:Crash Bandicoot<br>
-                        Tamaño: 20x10x10cm <br>
-                        Material:Plastico PLA+ y Luz Led <br>
-                        Altura: 20cm <br>
-                    </p>
-    
-                    <a href="#">Comprar</a>
-                </div>
-    
-            </div>
-
-            <div class="card">
-                <figure>
-                    <div class="slider-frame">
-                        <ul>
-                            <li><img src="img/NunuyWillump/nunu1.jpg" alt=""></li>
-                            <li><img src="img/NunuyWillump/nunu2.jpg" alt=""></li>
-                            <li><img src="img/NunuyWillump/nunu3.jpg" alt=""></li>
-                            <li><img src="img/NunuyWillump/nunu4.jpg" alt=""></li>
-                           
-                        </ul>
-                    </div>
-                </figure>
-                <div class="contenido">
-                    <h3>Nunu y Willump </h3>
-                    <p> Franquicia: League of Legends<br>
-                        Tamaño: 20x10x10cm <br>
-                        Material: Plastico PLA+ <br>
-                        Altura: 20cm <br>
-                    </p>
-    
-                    <a href="#">Comprar</a>
-                </div>
-    
-            </div>
-
-        </div>    
-
-    </div>
-    </div>
     </main>
 
     <footer>

@@ -1,3 +1,8 @@
+/* *************************************************************** */
+/* MODULO: registroContacto.js                                     */
+/* DESCRIPCION: Funciones para el registro de contactos            */
+/* *************************************************************** */
+
 // ===================================================== //
 // Función: procesarRegistroContacto                     //
 // Descripción: Procesa el registro de contacto          //
@@ -11,21 +16,6 @@ function procesarRegistroContacto() {
   let mensajeObj = document.getElementById('mensaje');
 
   mensajeObj.innerHTML = `<p class="usuario">${usuario}</p><p>¡¡Muchas gracias por contactarnos!!</p><p>A la brevedad nos estaremos comunicando.`;
-}
-
-// ===================================================== //
-// Función: obtenerParametro                             //
-// Descripción: Obtiene 'parametro' de la url            //
-// Parámetros:                                           //
-//      parametro = parametro a buscar                   //
-// Retorno:                                              //
-//      ret = valoar del parámetro                       //
-// ===================================================== //
-function obtenerParametro(parametro){
-    let params = new URLSearchParams(location.search);
-    var ret = params.get(parametro);
-
-    return ret;
 }
 
 // ===================================================== //

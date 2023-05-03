@@ -1,0 +1,70 @@
+/* 
+===================================================
+=       ESTILO PARA LA PÁGINA productos.html      =
+===================================================
+*/
+
+.contenedor_busqueda {
+    color: #edeaea;
+    background: rgba(0, 0, 0, 0.808);
+    padding: 10px;
+    margin: 20px 10%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 100px #32001e;
+    transition: all 400ms ease;
+}
+
+.contenedor_busqueda:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
+.busqueda {
+    display: flex;
+    flex-direction: row;
+}
+
+.busqueda input {
+    width: 90%;
+    border-radius: 5px 0 0 5px;
+    padding: 0 5px;
+}
+
+.busqueda button {
+    padding: 5px 10px;
+    background-color: #5e0202;
+    color: rgb(203, 203, 203);
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    transition: all 400ms ease;
+}
+
+.busqueda button:hover {
+    background:  rgb(203, 203, 203);
+    color:#5e0202;
+}
+
+.contenedor_mensaje {
+    color: #edeaea;
+    background: rgba(0, 0, 0, 0.808);
+    padding: 20px;
+    margin: 20px 10%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 100px #32001e;
+    transition: all 400ms ease;
+}
+
+.contenedor_mensaje:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
+.mensaje {
+    padding: 5px 10px;
+    text-align: center;
+    color: #cb4220;
+}
+
+.ocultar {
+    display: none;
+}
