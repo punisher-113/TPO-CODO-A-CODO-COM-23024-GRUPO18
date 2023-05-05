@@ -78,6 +78,11 @@
     text-align: justify;
 }
 
+.varios:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
 .varios h3 {
     margin: 0 0 15px 0;
 }
@@ -120,11 +125,6 @@
 
 .varios .grilla .redes_sociales i:hover {
     transform: scale(1.2);
-}
-
-.varios:hover{
-    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
-    transform: translatey(-1%);
 }
 
 @media screen and (max-width: 900px) {
