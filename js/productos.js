@@ -142,35 +142,35 @@ function obtenerProductos() {
     let productos = new Array();
 
     productos.push(new Producto('0001','Artorias',
-                ['Franquicia: Dark Souls','Tamaño: 20x15x10cm','Material: Plástico PLA+','Altura: 20cm'], 
+                ['Franquicia: Dark Souls','Tamaño: 20x15x10 cm','Material: Plástico PLA+','Altura: 20 cm'], 
                 ['img/Artorias/artorias1.jpg','img/Artorias/artorias3.jpg','img/Artorias/artorias2.jpg','img/Artorias/artorias1.jpg']));
     productos.push(new Producto('0002','Gato con Botas y Lobo',
-                ['Franquicia: Gato con Botas','Tamaño Gato: 12x5x5cm','Tamaño Lobo: 17x8x8cm','Material: Resina UV','Altura: 20cm'], 
+                ['Franquicia: Gato con Botas','Tamaño Gato: 12x5x5 cm','Tamaño Lobo: 17x8x8 cm','Material: Resina UV','Altura: 20 cm'], 
                 ['img/Gatoconbotas/gato1.jpg','img/Gatoconbotas/gato2.jpg','img/Gatoconbotas/gato3.jpg','img/Gatoconbotas/gato1.jpg']));
     productos.push(new Producto('0003','Androide 18',
-                ['Franquicia: Dragon Ball Z','Tamaño: 20x10x10cm','Material: Plástico PLA+ y ResinaUV','Altura: 20cm'],
+                ['Franquicia: Dragon Ball Z','Tamaño: 20x10x10 cm','Material: Plástico PLA+ y ResinaUV','Altura: 20 cm'],
                 ['img/Android18/android1.jpg','img/Android18/android2.jpg','img/Android18/android3.jpg','img/Android18/android4.jpg']));
     productos.push(new Producto('0004','Batman',
-                ['Franquicia: DC - Batman','Tamaño: 20x15x15cm','Material: Plástico PLA+ y ResinaUV','Altura: 20cm'],
+                ['Franquicia: DC','Tamaño: 20x15x15 cm','Material: Plástico PLA+ y ResinaUV','Altura: 20 cm'],
                 ['img/Batman/batman1.jpg','img/Batman/batman2.jpg','img/Batman/batman3.jpg','img/Batman/batman4.jpg']));
     productos.push(new Producto('0005','Crash Bandicoot',
-                ['Franquicia: Crash Bandicoot','Tamaño: 20x10x10cm','Material: Plastico PLA+ y Luz Led','Altura: 20cm'],
+                ['Franquicia: Crash Bandicoot','Tamaño: 20x10x10 cm','Material: Plastico PLA+ y Luz Led','Altura: 20 cm'],
                 ['img/Crash/Crash1.jpg','img/Crash/Crash2.jpg','img/Crash/Crash3.jpg','img/Crash/Crash4.jpg']))
     productos.push(new Producto('0006','Nunu y Willump',
-                ['Franquicia: League of Legends','Tamaño: 20x10x10cm ','Material: Plástico PLA+','Altura: 20cm'],
+                ['Franquicia: League of Legends','Tamaño: 20x10x10 cm ','Material: Plástico PLA+','Altura: 20 cm'],
                 ['img/NunuyWillump/nunu1.jpg','img/NunuyWillump/nunu2.jpg','img/NunuyWillump/nunu3.jpg','img/NunuyWillump/nunu4.jpg']))
     productos.push(new Producto('0007','Reika Shimohira', 
-                ['Franquicia: Gantz (Anime/Manga)','Tamaño: 25x14x14cm','Material: Resina UV','Altura: 25cm'],
+                ['Franquicia: Gantz','Tamaño: 25x14x14 cm','Material: Resina UV','Altura: 25 cm'],
                 ['img/ReikaShimohira/ReikaShimohira1.jpeg','img/ReikaShimohira/ReikaShimohira2.jpeg','img/ReikaShimohira/ReikaShimohira3.jpeg','img/ReikaShimohira/ReikaShimohira4.jpeg']));
-    productos.push(new Producto('0008','El Mandalorian y Grogu',
-                ['Franquicia: Starwars','Tamaño: 25x19x19cm','Matarial: Plástico PLA+ y Resina UV','Altura: 25cm'],
+    productos.push(new Producto('0008','Mandalorian y Grogu',
+                ['Franquicia: Star Wars','Tamaño: 25x19x19 cm','Matarial: Plástico PLA+ y Resina UV','Altura: 25 cm'],
                 ['img/MandalorianGrogu/MandalorianGrogu1.jpeg','img/MandalorianGrogu/MandalorianGrogu2.jpeg','img/MandalorianGrogu/MandalorianGrogu3.jpeg','img/MandalorianGrogu/MandalorianGrogu4.jpeg']));
-    productos.push(new Producto('0009','Spiderman',
-                ['Franquicia: Marvel','Medidas: 25x20x20cm','Materiales: Plástico PLA+ y Resina UV','Altura: 25cm'],
+    productos.push(new Producto('0009','Spider-Man',
+                ['Franquicia: Marvel','Medidas: 25x20x20 cm','Materiales: Plástico PLA+ y Resina UV','Altura: 25 cm'],
                 ['img/Spiderman/Spiderman1.jpeg','img/Spiderman/Spiderman2.jpeg','img/Spiderman/Spiderman3.jpeg','img/Spiderman/Spiderman4.jpeg']));
-    productos.push(new Producto('0010','Venon',
-                ['Franquicia: Marvel','Tamaño: 25x20x20cm','Material: Plástico PLA+ y Resina UV','Altura: 25cm'],
-                ['img/Venon/Venon1.jpeg','img/Venon/Venon2.jpeg','img/Venon/Venon3.jpeg','img/Venon/Venon4.jpeg']))
+    productos.push(new Producto('0010','Venom',
+                ['Franquicia: Marvel','Tamaño: 25x20x20 cm','Material: Plástico PLA+ y Resina UV','Altura: 25 cm'],
+                ['img/Venom/Venom1.jpeg','img/Venom/Venom2.jpeg','img/Venom/Venom3.jpeg','img/Venom/Venom4.jpeg']))
 
     return productos;
 }
