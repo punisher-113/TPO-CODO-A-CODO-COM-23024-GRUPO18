@@ -4,18 +4,6 @@
 ===================================================
 */
 
-.container_cards{
-    margin: auto;
-    margin-top: 10px;
-    width: 75%;
-    height: 75%;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .card {
     padding: 2px;
     margin: 10px;
@@ -37,8 +25,11 @@
 .card img{
     width: 100%;
     height: auto;
-   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .card .contenido{
     padding: 15px;
     text-align: center;
@@ -50,6 +41,10 @@
     line-height: 1.5;
     color: #edeaea;
     text-align: left;
+}
+
+.card .contenido .campo {
+    color:#ea0e0e;
 }
 
 /* Tituro del card */
@@ -74,6 +69,12 @@
 	height: 100%;
 }
 
+.card .contenido .precio {
+    font-size: 110%;
+    color: #e8810c;
+    text-align: center;
+}
+
 .card .contenido a{
     text-decoration: none;
     display: inline-block;
@@ -84,13 +85,6 @@
     border: 1px solid ;
     border-radius: 4px;
     transition: all 400ms ease;
-
-}
-
-.card img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .card .contenido a:hover{
@@ -124,4 +118,83 @@
     .card {
         width: 60%;
     }
+}
+
+/* Card destacada */
+.card_destacada {
+    font-size: 80%;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.808);
+    color: aliceblue;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    width: auto;    
+}
+
+.card_destacada:hover{
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-1%);
+}
+
+.card_destacada img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card_destacada .contenido{
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+.card_destacada .contenido p{
+    line-height: 1.5;
+    color: #edeaea;
+    text-align: left;
+}
+
+.card_destacada .contenido .campo {
+    color:#ea0e0e;
+}
+
+.card_destacada .contenido h3 {
+    line-height: 1.5;
+    color: #e10d0d;
+    margin-bottom: 15px;
+}
+
+.card_destacada .contenido .precio {
+    text-decoration: line-through;
+    color: #c5baad;
+    text-align: center;
+}
+
+.card_destacada .contenido .precio_descuento {
+    font-size: 110%;
+    color: #e8810c;
+    text-align: center;
+}
+
+.card_destacada a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: #5e0202;
+    color: rgb(203, 203, 203);
+    border: 1px solid ;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card_destacada .contenido a:hover{
+    background: rgb(203, 203, 203);
+    color:#5e0202;
 }

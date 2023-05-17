@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="shortcut icon" href="favicon/3d-printer.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/tarjetas.css">
+
+    <script src="js/productos.js"></script>
     <script src="js/slider.js"></script>
     <script src="https://kit.fontawesome.com/bd57c9676d.js" crossorigin="anonymous"></script>
+
     <title>Laboratorio3D</title>
 </head>
 
-<body onload="inicializarSliderDestacados(3, 3);">
+<body onresize="ajustarSliderDestacados(7);" onload="mostrarProductosDestacados(obtenerProductosDestacados()); ajustarSliderDestacados(7);">
     <header>
-
+    <!-- El header se asigna al incluir el módulo general.js -->
     </header>
 
     <div class="info_header">
@@ -42,7 +46,21 @@
                 <br><br>
                 Creamos una nueva experiencia para hacer tus piezas mediante la impresión 3D. Fabricamos tus diseños 3D de una manera profesional desde cero en el caso de ser necesario. Facilitamos la posibilidad de imprimir en 3D tus piezas, proyectos, prototipos o diseños 3D asegurando calidad.</p>
         </div>
-        <div class="container_cards">
+        
+        <div class="titulo"> 
+            <h2>Productos Destacados</h2>
+        </div>
+        <div class="contenedor_slider_destacados">
+        <!-- En este contenedor se van a mostrar los productos destacados -->
+            <div class="contenedor_mensaje">
+            <!-- En este contenedor se va a mostrar le mensaje si no se encuentran productos -->
+            </div>
+         </div>
+        
+        <div class="titulo"> 
+            <h2>Impresión</h2>
+        </div>
+        <div class="contenedor_impresoras">
             <div class="card">
     
                 <img src="img/Impresoras/1.jpg" alt="Impresora de estereolitografía para impresiones 3D en Resina">
@@ -87,7 +105,7 @@
     </main>
 
     <footer>
-        
+    <!-- El footer se asigna al incluir el módulo general.js -->
     </footer>
     <script src="js/general.js"></script>
 </body>

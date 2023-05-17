@@ -19,7 +19,28 @@
     transition: all 400ms ease;
 }
 
-.contenedor_index:hover{
+.contenedor_index:hover {
     box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
-    transform: translatey(-1%);
+    transform: translatey(-10px);
+}
+
+.contenedor_impresoras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    color: #edeaea;
+    background: rgba(0, 0, 0, 0.808);
+    text-align: justify;
+    padding: 20px;
+    margin: 20px 7%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 100px rgba(50, 0, 30, 1);
+    transition: all 400ms ease;
+}
+
+.contenedor_impresoras:hover {
+    box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
+    transform: translatey(-10px);
 }

@@ -3,21 +3,7 @@
 /* DESCRIPCION: Funciones de uso general                           */
 /* *************************************************************** */
 
-// ===================================================== //
-// Función: obtenerParametro                             //
-// Descripción: Obtiene 'parametro' de la url            //
-// Parámetros:                                           //
-//      parametro = parametro a buscar                   //
-// Retorno:                                              //
-//      ret = valoar del parámetro                       //
-// ===================================================== //
-function obtenerParametro(parametro){
-    let params = new URLSearchParams(location.search);
-    let ret = params.get(parametro);
-
-    return (ret===null)?"":ret;
-}
-
+// Asigna el header de la página
 let tempHeader=`
         <div class="contacto_header">
             <a href="mailto:info@laboratorio3d.com.ar" title="Enviar email"><i class="fa-regular fa-envelope"></i> info@laboratorio3d.com.ar</a>
@@ -40,11 +26,10 @@ let tempHeader=`
                     &#215
                 </label>
             </nav>    
-        </div>
-`
-
+        </div>`
 document.querySelector("header").innerHTML=tempHeader;
 
+// Asigna el footer de la página
 let tempFooter=`
     <div class="info_footer">
     <p>Suipacha 2972, Turdera, Buenos Aires, Argentina.
@@ -63,6 +48,5 @@ let tempFooter=`
 <a href="https://www.discord.com" title="Contactar por Disord"><i class="fa-brands fa-discord fa-fw fa-2x"></i></a> 
 <a href="https://www.instagram.com" title="Nuestro Instagram"><i class="fa-brands fa-instagram fa-fw fa-2x"></i></a> 
 <a href="https://www.facebook.com" title="Nuestro Facebook"><i class="fa-brands fa-facebook fa-fw fa-2x"></i></a> 
-</div>
-`
+</div>`
 document.querySelector("footer").innerHTML=tempFooter
