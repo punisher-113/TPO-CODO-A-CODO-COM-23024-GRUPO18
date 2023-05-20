@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/contacto.css">
 
-    <script type="text/javascript" src="js/registroContacto.js"></script>
     <script src="https://kit.fontawesome.com/bd57c9676d.js" crossorigin="anonymous"></script>
+    <script src="js/contacto.js" type="module"></script>
 
     <title>Laboratorio3D</title>
 </head>
 
-<body onload="AsignarValidaciones();">
+<body>
     <header>
     <!-- El header se asigna al incluir el módulo general.js -->
     </header>
@@ -30,7 +30,7 @@
             <h1>CONTACTO</h1>
         </div>
         <div class="contenedor_contacto">        
-            <form class="contacto" action="https://formsubmit.co/19f4609bf22538f56ae06e3e68b776ac" method="POST"  onsubmit="actualizarCampoNext()">
+            <form class="contacto" action="https://formsubmit.co/19f4609bf22538f56ae06e3e68b776ac" method="POST">
                 <fieldset class="contenedor_contacto_campos">
                     <h3>Información de contacto</h2>
                     <label for="nombre">Nombre</label>
@@ -61,9 +61,9 @@
                     </div>
                     <div class="redes_sociales">
                         <h3>Seguinos en</h3>
-                        <a href="https://www.discord.com" title="Contactar por Discord"><i class="fa-brands fa-discord fa-fw fa-3x" ></i></a> 
-                        <a href="https://www.instagram.com" title="Nuestro Instagram"><i class="fa-brands fa-instagram fa-fw fa-3x"></i></a> 
-                        <a href="https://www.facebook.com" title="Nuestro Facebook"><i class="fa-brands fa-facebook fa-fw fa-3x" ></i></a> 
+                        <a href="https://www.discord.com" title="Contactar por Discord" target="_blank"><i class="fa-brands fa-discord fa-fw fa-3x" ></i></a> 
+                        <a href="https://www.instagram.com" title="Nuestro Instagram" target="_blank"><i class="fa-brands fa-instagram fa-fw fa-3x"></i></a> 
+                        <a href="https://www.facebook.com" title="Nuestro Facebook" target="_blank"><i class="fa-brands fa-facebook fa-fw fa-3x" ></i></a> 
                     </div>
                 </div> 
             </div>
@@ -72,15 +72,6 @@
     <footer>
     <!-- El footer se asigna al incluir el módulo general.js -->
     </footer>
-
-    <script type="text/javascript">
-        function AsignarValidaciones(){
-            validarCampo('nombre', 'Por favor complete el campo');
-            validarCampo('apellido', 'Por favor complete el campo');
-            validarCampo('email', 'Por favor complete el campo');
-            validarCampo('comentario', 'Por favor complete el campo');
-        }
-    </script>
     <script src="js/general.js"></script>
 </body>
 

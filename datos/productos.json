@@ -1,0 +1,263 @@
+[
+    {
+     "id": 1, 
+     "nombre": "Artorias",
+     "precio": 7000,
+     "datos": [
+                {
+                 "campo": "Franquicia",
+                 "valor": "Dark Souls"
+                },
+                {
+                 "campo": "Tamaño",
+                 "valor": "20x15,10cm"
+                },
+                {
+                 "campo": "Material",
+                 "valor": "Plástico PLA+"
+                },
+                {
+                 "campo": "altura",
+                 "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Artorias/artorias1.jpg", 
+                  "img/Artorias/artorias2.jpg",
+                  "img/Artorias/artorias3.jpg",
+                  "img/Artorias/artorias4.jpg"
+                 ]
+    }, 
+    {
+     "id": 2,
+     "nombre": "Androide 18",
+     "precio": 6900,
+     "datos": [
+                {
+                 "campo": "Franquicia",
+                 "valor": "Dragon Ball Z"
+                },
+                {
+                 "campo": "Tamaño",
+                 "valor": "20x10x10cm"
+                },
+                {
+                 "campo": "Material",
+                 "valor": "Plástico PLA+ y ResinaUV"
+                },
+                {
+                 "campo": "altura",
+                 "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Android18/android1.jpg", 
+                  "img/Android18/android2.jpg",
+                  "img/Android18/android3.jpg",
+                  "img/Android18/android4.jpg"
+                 ]
+    },
+    {
+     "id": 3,
+     "nombre": "Batman",
+     "precio": 7100,
+     "datos": [
+               {
+                "campo": "Franquicia",
+                "valor": "DC"
+               },
+               {
+                "campo": "Tamaño",
+                "valor": "20x15x15cm"
+               },
+               {
+                "campo": "Material",
+                "valor": "Plástico PLA+ y ResinaUV"
+               },
+               {
+                "campo": "altura",
+                "valor": "20cm"
+               }
+              ],
+     "imagenes": [
+                 "img/Batman/batman1.jpg", 
+                 "img/Batman/batman2.jpg",
+                 "img/Batman/batman3.jpg",
+                 "img/Batman/batman4.jpg"
+                ]
+    },
+    {
+     "id": 4,
+     "nombre": "Crash Bandicoot",
+     "precio": 5600,
+     "datos": [
+               {
+                "campo": "Franquicia",
+                "valor": "Crash Bandicoot"
+               },
+               {
+                "campo": "Tamaño",
+                "valor": "20x10x10cm"
+               },
+               {
+                "campo": "Material",
+                "valor": "Plástico PLA+ y Luz Led"
+               },
+               {
+                "campo": "altura",
+                "valor": "20cm"
+               }
+              ],
+     "imagenes": [
+                  "img/Crash/Crash1.jpg", 
+                  "img/Crash/Crash2.jpg",
+                  "img/Crash/Crash3.jpg",
+                  "img/Crash/Crash4.jpg"
+                 ]
+    },
+    {
+     "id": 5,
+     "nombre": "Nunu y Willump",
+     "precio": 7600,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "League of Legends"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x10x10cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "Plástico PLA+"
+                },
+                {
+                  "campo": "altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/NunuyWillump/nunu1.jpg", 
+                  "img/NunuyWillump/nunu2.jpg",
+                  "img/NunuyWillump/nunu3.jpg",
+                  "img/NunuyWillump/nunu4.jpg"
+                 ]
+    },
+    {
+     "id": 6,
+     "nombre": "Reika Shimohira",
+     "precio": 7600,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Gantz (Anime/Manga)"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "25x14x14cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "ResinaUV"
+                },
+                {
+                  "campo": "altura",
+                  "valor": "25cm"
+                }
+              ],
+     "imagenes": [
+                  "img/ReikaShimohira/ReikaShimohira1.jpeg", 
+                  "img/ReikaShimohira/ReikaShimohira2.jpeg",
+                  "img/ReikaShimohira/ReikaShimohira3.jpeg",
+                  "img/ReikaShimohira/ReikaShimohira4.jpeg"
+                 ]
+    },
+    {
+     "id": 7,
+     "nombre": "El Mandalorian y Grogu",
+     "precio": 10500,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Starwars"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "25x19x19cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "Plástico PLA+ y ResinaUV"
+                },
+                {
+                  "campo": "altura",
+                  "valor": "25cm"
+                }
+              ],
+     "imagenes": [
+                  "img/MandalorianGrogu/MandalorianGrogu1.jpeg", 
+                  "img/MandalorianGrogu/MandalorianGrogu2.jpeg",
+                  "img/MandalorianGrogu/MandalorianGrogu3.jpeg",
+                  "img/MandalorianGrogu/MandalorianGrogu4.jpeg"
+                 ]
+    },
+    {
+     "id": 8,
+     "nombre": "Spiderman",
+     "precio": 9000,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Marvel"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "25x20x20cm'"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "Plástico PLA+ y ResinaUV"
+                },
+                {
+                  "campo": "altura",
+                  "valor": "25cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Spiderman/Spiderman1.jpeg", 
+                  "img/Spiderman/Spiderman2.jpeg",
+                  "img/Spiderman/Spiderman3.jpeg",
+                  "img/Spiderman/Spiderman4.jpeg"
+                 ]
+    },
+    {
+     "id": 9,
+     "nombre": "Venom",
+     "precio": 9000,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Marvel"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "25x20x20cm'"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "Plástico PLA+ y ResinaUV"
+                },
+                {
+                  "campo": "altura",
+                  "valor": "25cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Venom/Venom1.jpeg", 
+                  "img/Venom/Venom2.jpeg",
+                  "img/Venom/Venom3.jpeg",
+                  "img/Venom/Venom4.jpeg"
+                 ]
+    }
+]

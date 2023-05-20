@@ -14,13 +14,12 @@
 
     <script src="https://kit.fontawesome.com/bd57c9676d.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/parametros.js"></script>
-    <script src="js/productos.js"></script>
+    <script src="js/productos.js" type="module"></script>
 
     <title>Laboratorio3D</title>
 </head>
 
-<body onload="mostrarProductos(buscarProductos(obtenerParametro('buscar')))">
+<body>
     <header>
     <!-- El header se asigna al incluir el módulo general.js -->        
     </header>
@@ -41,13 +40,36 @@
             </form>
         </div>
 
-        <div class="contenedor_mensaje">
-        </div>
-
         <div class="contenedor_tarjetas">
-
+            <!-- En esta sección se van a mostrar los productos -->
         </div>
 
+        <!-- Template para cada producto -->
+        <template id="producto">
+            <article class="card">
+                <figure>
+                    <div class="slider-frame">
+                        <ul id="lista-imagenes">
+                        </ul>
+                    </div>
+                </figure>
+                <section class="contenido">
+                    <h3></h3>
+                    <section id="datos">
+                        <p><span id="campo" class="campo"></span><span id="valor"></span></p>
+                    </section>
+                    <p id="precio_anterior"></p>
+                    <p id="precio" class="precio"></p>
+                    <a href="">Comprar</a>
+                </section>
+            </article>
+        </template>
+
+        <div class="contenedor_mensaje">
+            <!-- En este contenedor se va a mostrar le mensaje si no se encuentran productos -->
+                <p class="mensaje"></p>
+        </div>
+    
     </main>
 
     <footer>

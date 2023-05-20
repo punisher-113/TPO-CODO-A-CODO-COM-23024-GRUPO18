@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/tarjetas.css">
 
-    <script src="js/productos.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/index.js" type="module"></script>
     <script src="https://kit.fontawesome.com/bd57c9676d.js" crossorigin="anonymous"></script>
 
     <title>Laboratorio3D</title>
 </head>
 
-<body onresize="ajustarSliderDestacados(7);" onload="mostrarProductosDestacados(obtenerProductosDestacados()); ajustarSliderDestacados(7);">
+<body>
     <header>
     <!-- El header se asigna al incluir el módulo general.js -->
     </header>
@@ -51,11 +50,36 @@
             <h2>Productos Destacados</h2>
         </div>
         <div class="contenedor_slider_destacados">
-        <!-- En este contenedor se van a mostrar los productos destacados -->
-            <div class="contenedor_mensaje">
-            <!-- En este contenedor se va a mostrar le mensaje si no se encuentran productos -->
+            <!-- En esta sección se van a mostrar los productos destacados -->
+            <div class="slider_destacados">
             </div>
-         </div>
+        </div>
+        
+        <!-- Template para cada item destacado -->
+        <template id="producto-destacado">
+            <div class="item_destacado" id="">
+                <article class="card_destacada">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                    <section class="contenido">
+                        <h3></h3>
+                        <section id="datos">
+                            <p><span id="campo" class="campo"></span><span id="valor"></span></p>
+                        </section>
+                        <p id="precio_anterior"></p>
+                        <p id="precio" class="precio"></p>
+                        <a href="">Comprar</a>
+                        <a href="" id="ver">Ver</a>
+                    </section>
+                </article>
+            </div>
+        </template>
+
+        <div class="contenedor_mensaje">
+        <!-- En este contenedor se va a mostrar le mensaje si no se encuentran productos -->
+            <p class="mensaje"></p>
+        </div>
         
         <div class="titulo"> 
             <h2>Impresión</h2>

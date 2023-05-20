@@ -10,7 +10,7 @@
 // Retorno:                                              //
 //      ret = valoar del parámetro                       //
 // ===================================================== //
-function obtenerParametro(parametro){
+export function obtenerParametro(parametro){
     let params = new URLSearchParams(location.search);
     let ret = params.get(parametro);
 

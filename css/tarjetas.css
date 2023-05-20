@@ -69,6 +69,18 @@
 	height: 100%;
 }
 
+.card .contenido .precio_techado {
+    text-decoration: line-through;
+    color: #c5baad;
+    text-align: center;
+}
+
+.card .contenido .precio_oculto {
+    font-size: 110%;
+    color: rgba(0, 0, 0, 0.808);
+    text-align: center;
+}
+
 .card .contenido .precio {
     font-size: 110%;
     color: #e8810c;
@@ -170,13 +182,18 @@
     margin-bottom: 15px;
 }
 
-.card_destacada .contenido .precio {
+.card_destacada .contenido .precio_techado {
     text-decoration: line-through;
     color: #c5baad;
     text-align: center;
 }
 
-.card_destacada .contenido .precio_descuento {
+.card_destacada .contenido .precio_oculto {
+    font-size: 110%;
+    color: rgba(0, 0, 0, 0.808);
+    text-align: center;
+}
+.card_destacada .contenido .precio {
     font-size: 110%;
     color: #e8810c;
     text-align: center;
