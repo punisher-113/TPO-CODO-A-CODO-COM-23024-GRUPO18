@@ -6,7 +6,7 @@
 
 .contenedor_busqueda {
     color: #edeaea;
-    background: rgba(0, 0, 0, 0.808);
+    background: rgba(10, 0, 0, 0.808);
     padding: 10px;
     margin: 20px 20%;
     border-radius: 10px;
@@ -52,7 +52,7 @@
     justify-content: center;
 
     color: #edeaea;
-    background: rgba(0, 0, 0, 0.808);
+    background: rgba(10, 0, 0, 0.808);
     text-align: justify;
     padding: 20px;
     margin: 20px 7%;

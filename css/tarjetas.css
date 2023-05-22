@@ -9,7 +9,7 @@
     margin: 10px;
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.808);
+    background: rgba(10, 0, 0, 0.808);
     color: aliceblue;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
@@ -77,7 +77,7 @@
 
 .card .contenido .precio_oculto {
     font-size: 110%;
-    color: rgba(0, 0, 0, 0.808);
+    color: rgba(10, 0, 0, 0.808);
     text-align: center;
 }
 
@@ -139,7 +139,7 @@
     margin: 10px;
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.808);
+    background: rgba(10, 0, 0, 0.808);
     color: aliceblue;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
@@ -190,7 +190,7 @@
 
 .card_destacada .contenido .precio_oculto {
     font-size: 110%;
-    color: rgba(0, 0, 0, 0.808);
+    color: rgba(10, 0, 0, 0.808);
     text-align: center;
 }
 .card_destacada .contenido .precio {

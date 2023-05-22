@@ -14,10 +14,10 @@
                 },
                 {
                  "campo": "Material",
-                 "valor": "Plástico PLA+"
+                 "valor": "PLA+"
                 },
                 {
-                 "campo": "altura",
+                 "campo": "Altura",
                  "valor": "20cm"
                 }
               ],
@@ -43,18 +43,18 @@
                 },
                 {
                  "campo": "Material",
-                 "valor": "Plástico PLA+ y ResinaUV"
+                 "valor": "PLA+ y ResinaUV"
                 },
                 {
-                 "campo": "altura",
+                 "campo": "Altura",
                  "valor": "20cm"
                 }
               ],
      "imagenes": [
-                  "img/Android18/android1.jpg", 
-                  "img/Android18/android2.jpg",
-                  "img/Android18/android3.jpg",
-                  "img/Android18/android4.jpg"
+                  "img/Android18/android1.jpeg", 
+                  "img/Android18/android2.jpeg",
+                  "img/Android18/android3.jpeg",
+                  "img/Android18/android4.jpeg"
                  ]
     },
     {
@@ -72,10 +72,10 @@
                },
                {
                 "campo": "Material",
-                "valor": "Plástico PLA+ y ResinaUV"
+                "valor": "PLA+ y ResinaUV"
                },
                {
-                "campo": "altura",
+                "campo": "Altura",
                 "valor": "20cm"
                }
               ],
@@ -88,35 +88,6 @@
     },
     {
      "id": 4,
-     "nombre": "Crash Bandicoot",
-     "precio": 5600,
-     "datos": [
-               {
-                "campo": "Franquicia",
-                "valor": "Crash Bandicoot"
-               },
-               {
-                "campo": "Tamaño",
-                "valor": "20x10x10cm"
-               },
-               {
-                "campo": "Material",
-                "valor": "Plástico PLA+ y Luz Led"
-               },
-               {
-                "campo": "altura",
-                "valor": "20cm"
-               }
-              ],
-     "imagenes": [
-                  "img/Crash/Crash1.jpg", 
-                  "img/Crash/Crash2.jpg",
-                  "img/Crash/Crash3.jpg",
-                  "img/Crash/Crash4.jpg"
-                 ]
-    },
-    {
-     "id": 5,
      "nombre": "Nunu y Willump",
      "precio": 7600,
      "datos": [
@@ -130,10 +101,10 @@
                 },
                 {
                   "campo": "Material",
-                  "valor": "Plástico PLA+"
+                  "valor": "PLA+"
                 },
                 {
-                  "campo": "altura",
+                  "campo": "Altura",
                   "valor": "20cm"
                 }
               ],
@@ -145,7 +116,7 @@
                  ]
     },
     {
-     "id": 6,
+     "id": 5,
      "nombre": "Reika Shimohira",
      "precio": 7600,
      "datos": [
@@ -162,7 +133,7 @@
                   "valor": "ResinaUV"
                 },
                 {
-                  "campo": "altura",
+                  "campo": "Altura",
                   "valor": "25cm"
                 }
               ],
@@ -174,7 +145,7 @@
                  ]
     },
     {
-     "id": 7,
+     "id": 6,
      "nombre": "El Mandalorian y Grogu",
      "precio": 10500,
      "datos": [
@@ -188,10 +159,10 @@
                 },
                 {
                   "campo": "Material",
-                  "valor": "Plástico PLA+ y ResinaUV"
+                  "valor": "PLA+ y ResinaUV"
                 },
                 {
-                  "campo": "altura",
+                  "campo": "Altura",
                   "valor": "25cm"
                 }
               ],
@@ -203,7 +174,7 @@
                  ]
     },
     {
-     "id": 8,
+     "id": 7,
      "nombre": "Spiderman",
      "precio": 9000,
      "datos": [
@@ -213,14 +184,14 @@
                 },
                 {
                   "campo": "Tamaño",
-                  "valor": "25x20x20cm'"
+                  "valor": "25x20x20cm"
                 },
                 {
                   "campo": "Material",
-                  "valor": "Plástico PLA+ y ResinaUV"
+                  "valor": "PLA+ y ResinaUV"
                 },
                 {
-                  "campo": "altura",
+                  "campo": "Altura",
                   "valor": "25cm"
                 }
               ],
@@ -232,7 +203,7 @@
                  ]
     },
     {
-     "id": 9,
+     "id": 8,
      "nombre": "Venom",
      "precio": 9000,
      "datos": [
@@ -242,14 +213,14 @@
                 },
                 {
                   "campo": "Tamaño",
-                  "valor": "25x20x20cm'"
+                  "valor": "25x20x20cm"
                 },
                 {
                   "campo": "Material",
-                  "valor": "Plástico PLA+ y ResinaUV"
+                  "valor": "PLA+ y ResinaUV"
                 },
                 {
-                  "campo": "altura",
+                  "campo": "Altura",
                   "valor": "25cm"
                 }
               ],
@@ -258,6 +229,383 @@
                   "img/Venom/Venom2.jpeg",
                   "img/Venom/Venom3.jpeg",
                   "img/Venom/Venom4.jpeg"
+                 ]
+    },
+    {
+     "id": 9,
+     "nombre": "Nautilus",
+     "precio": 9000,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "League of Legends"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "15x18x13cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "15cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Nautilus/Nautilus01.jpeg", 
+                  "img/Nautilus/Nautilus02.jpeg",
+                  "img/Nautilus/Nautilus03.jpeg",
+                  "img/Nautilus/Nautilus04.jpeg"
+                 ]
+    },
+    {
+     "id": 10,
+     "nombre": "Tristana",
+     "precio": 8900,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "League of Legends"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "15x18x15cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "15cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Tristana/Tristana1.jpeg", 
+                  "img/Tristana/Tristana2.jpeg",
+                  "img/Tristana/Tristana3.jpeg",
+                  "img/Tristana/Tristana4.jpeg"
+                 ]
+    },
+    {
+     "id": 11,
+     "nombre": "Ratchet N Clank",
+     "precio": 11000,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Ratchet N Clank"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x21x10cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/RatchetNClank/RatchetNClank1.jpeg", 
+                  "img/RatchetNClank/RatchetNClank2.jpeg",
+                  "img/RatchetNClank/RatchetNClank3.jpeg",
+                  "img/RatchetNClank/RatchetNClank4.jpeg"
+                 ]
+    },
+    {
+     "id": 12,
+     "nombre": "Bowser",
+     "precio": 8700,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Mario Bros"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "15x10x10cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "15cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Bowser/Bowser1.jpeg", 
+                  "img/Bowser/Bowser2.jpeg",
+                  "img/Bowser/Bowser3.jpeg",
+                  "img/Bowser/Bowser4.jpeg"
+                 ]
+    },
+    {
+     "id": 13,
+     "nombre": "Lux",
+     "precio": 11500,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "League of Legends"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x15x15cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+, Resina y Leds"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Lux/Lux1.jpeg", 
+                  "img/Lux/Lux2.jpeg",
+                  "img/Lux/Lux3.jpeg",
+                  "img/Lux/Lux4.jpeg"
+                 ]
+    },
+    {
+     "id": 14,
+     "nombre": "Hollow Knight con Hongos",
+     "precio": 9900,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Hollow Knight"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x15x15cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/HollowKnightHongos/HollowKnightH1.jpeg", 
+                  "img/HollowKnightHongos/HollowKnightH2.jpeg",
+                  "img/HollowKnightHongos/HollowKnightH3.jpeg",
+                  "img/HollowKnightHongos/HollowKnightH4.jpeg"
+                 ]
+    },
+    {
+     "id": 15,
+     "nombre": "Hollow Knight con Luces",
+     "precio": 10900,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Hollow Knight"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x15x12cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+ y Resina"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/HollowKnightLuces/HollowKnightLuces1.jpeg", 
+                  "img/HollowKnightLuces/HollowKnightLuces2.jpeg",
+                  "img/HollowKnightLuces/HollowKnightLuces3.jpeg",
+                  "img/HollowKnightLuces/HollowKnightLuces4.jpeg"
+                 ]
+    },
+    {
+     "id": 16,
+     "nombre": "Hornet",
+     "precio": 9000,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Hollow Knight"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x15x12cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Hornet/Hornet1.jpeg", 
+                  "img/Hornet/Hornet2.jpeg",
+                  "img/Hornet/Hornet3.jpeg",
+                  "img/Hornet/Hornet4.jpeg"
+                 ]
+    },
+    {
+     "id": 17,
+     "nombre": "Grogu - Baby Yoda",
+     "precio": 8500,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Star Wars"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x12x12cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/GroguBabyYoda/Grogu1.jpeg", 
+                  "img/GroguBabyYoda/Grogu2.jpeg",
+                  "img/GroguBabyYoda/Grogu3.jpeg",
+                  "img/GroguBabyYoda/Grogu4.jpeg"
+                 ]
+    },
+    {
+     "id": 18,
+     "nombre": "Gipsy Danger",
+     "precio": 9200,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Pacific Rim"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "25x15x15cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "25cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Gipsy/Gipsy1.jpeg", 
+                  "img/Gipsy/Gipsy2.jpeg",
+                  "img/Gipsy/Gipsy3.jpeg",
+                  "img/Gipsy/Gipsy4.jpeg"
+                 ]
+    },
+    {
+     "id": 19,
+     "nombre": "Robot B9",
+     "precio": 9000,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Lost In Space"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "20x12x12cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "20cm"
+                }
+              ],
+     "imagenes": [
+                  "img/RobotB9/RobotB91.jpeg", 
+                  "img/RobotB9/RobotB92.jpeg",
+                  "img/RobotB9/RobotB93.jpeg",
+                  "img/RobotB9/RobotB94.jpeg"
+                 ]
+    },
+    {
+     "id": 20,
+     "nombre": "Funko Iron Man Chasquido",
+     "precio": 8900,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Marvel"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "15x12x12cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+ y Leds"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "15cm"
+                }
+              ],
+     "imagenes": [
+                  "img/IronMan/IronMan1.jpeg", 
+                  "img/IronMan/IronMan2.jpeg",
+                  "img/IronMan/IronMan3.jpeg",
+                  "img/IronMan/IronMan4.jpeg"
+                 ]
+    },
+    {
+     "id": 21,
+     "nombre": "Rocky Balboa",
+     "precio": 10000,
+     "datos": [
+                {
+                  "campo": "Franquicia",
+                  "valor": "Rocky"
+                },
+                {
+                  "campo": "Tamaño",
+                  "valor": "15x12x12cm"
+                },
+                {
+                  "campo": "Material",
+                  "valor": "PLA+"
+                },
+                {
+                  "campo": "Altura",
+                  "valor": "15cm"
+                }
+              ],
+     "imagenes": [
+                  "img/Rocky/Rocky1.jpeg", 
+                  "img/Rocky/Rocky2.jpeg",
+                  "img/Rocky/Rocky3.jpeg",
+                  "img/Rocky/Rocky4.jpeg"
                  ]
     }
 ]

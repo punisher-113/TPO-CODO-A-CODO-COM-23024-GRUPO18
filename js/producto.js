@@ -307,7 +307,7 @@ export async function obtenerProductos(funcion) {
     // Busco los productos
     fetchProductos()
         // Una vez obtenidos los datos, creo cada producto
-        .then(datos => datos.map(item => productos.push(new Producto(item.id, item.nombre, item.precio, esDestacado(datos.length, item.id, datos.length/2),
+        .then(datos => datos.map(item => productos.push(new Producto(item.id, item.nombre, item.precio, esDestacado(datos.length, item.id, datos.length/4),
                                                                      item.datos.map(dato => new DatoProducto(dato.campo, dato.valor)),
                                                                      item.imagenes))))
         .catch(() => {
@@ -492,88 +492,4 @@ export function buscarProductos(productos, criterio='') {
 
     return ret;
 }
-
-// -------------------------------------------------------------------------- //
-
-
-// ===================================================== //
-// Función: mostrarProductos                             //
-// Descripción: Muestra los productos                    //
-// Parámetros:                                           //
-//      productos = listado de productos a mostrar       //
-// Retorno:                                              //
-//      nada                                             //
-// ===================================================== //
-function mostrarProductos(productos) {
-
-    // Obtengo el div que va a contener los productos
-    let contenedor_productos = document.querySelector(".contenedor_tarjetas");
-
-    // Obtengo el div del mensaje
-    let contenedor_mensaje = document.querySelector(".contenedor_mensaje");
-
-    if (productos.length>0) {
-        // Oculto el mensaje
-        contenedor_mensaje.className = "ocultar";
-
-        // Recorro los productos
-        productos.forEach(producto => {
-            let productoHTML = armarProducto(producto);
-            contenedor_productos.appendChild(productoHTML);
-        });
-    }
-    else
-    {
-        // Oculto los productos
-        contenedor_productos.className = "ocultar";
-
-        // Muestro el mensaje
-        mensaje = document.createElement("p");
-        mensaje.className = "mensaje";
-        mensaje.innerHTML = "No se encontraron productos";
-        contenedor_mensaje.appendChild(mensaje);
-    }
-}
-
-// ===================================================== //
-// Función: obtenerProductosDestacados                   //
-// Descripción: Devuelve una lista de productos          //
-//              destacados                               //
-// Parámetros:                                           //
-//      nada                                             //
-// Retorno:                                              //
-//      ret = lista de productos destacados              //
-// ===================================================== //
-function obtenerProductosDestacados() {
-    // Obtengo los productos
-    let productos = obtenerProductos(alert);
-
-    console.log(productos);
-
-    // Creo una lista de productos destacados vacía
-    let productos_destacados = new Array();
-
-    console.log(productos.length);
-
-    // Veo si encontré productos
-    if (productos.length > 0) {
-
-        // Elijo en forma aleatoria la cantidad de productos destacados
-        let cantidad = Math.floor(Math.random() * (productos.length / 2)) + 1;
-
-        // Elijo los prouctos destacados
-        do {
-            // Elijo un número entre 0 y la cantidad de productos - 1
-            i = Math.floor(Math.random() * productos.length);
-            // Si el producto no está en la lista, lo agrego
-            if (buscarProductoID(productos_destacados, productos[i].id) === null) {
-                productos_destacados.push(productos[i]);
-            }
-            cantidad--;
-        } while (cantidad > 0);
-    }
-
-    return productos_destacados;
-}
-
 
