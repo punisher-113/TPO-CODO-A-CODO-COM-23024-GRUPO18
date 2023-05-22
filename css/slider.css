@@ -1,0 +1,114 @@
+/* 
+===================================================
+=               ESTILO PARA sliders              =
+===================================================
+*/
+
+/* Slider para mostrar info */
+.slider_info {
+	width: 50%;
+	margin: auto;
+ 	overflow: hidden;
+}
+
+.slider_info ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slider_info_cambio 10s infinite alternate linear;
+}
+
+.slider_info li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider_info img {
+	border-radius: 10px;
+	width: 100%;
+}
+
+@keyframes slider_info_cambio {
+ 	0% {margin-left: 0%;}
+	20% {margin-left: 0%;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+@media screen and (max-width: 460px) {
+    .slider_info {
+		width: 100%;
+    }
+}
+
+@media screen and (min-width: 461px) and (max-width: 900px) {
+    .slider_info {
+		width: 80%;
+    }
+}
+
+/* Slider para las tarjetas de productos */
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	/* esta animación me modifica en el módulo producto.js 
+	   se le agrega un delay a cada producto */
+	animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;	
+    height: auto;
+
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* Slider para productos destacados */
+
+.slider_destacados {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+
+.item_destacado {
+	display: flex;
+	flex-direction: row;
+
+	width: 280px;
+	min-width: 280px;
+	height: 610px;
+	min-height: 610px;
+	list-style-type: none;
+	
+	transition: 1s all; 
+}
