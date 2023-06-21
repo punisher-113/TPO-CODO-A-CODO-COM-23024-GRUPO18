@@ -23,6 +23,11 @@
     text-align: justify;
 }
 
+.contacto .campo_error {
+    color: white;
+    background-color: #b63212;
+}
+
  .contacto:hover {
     box-shadow: 5px 5px 10px rgba(61, 182, 234, 0.795); ;   
     transform: translatey(-1%);

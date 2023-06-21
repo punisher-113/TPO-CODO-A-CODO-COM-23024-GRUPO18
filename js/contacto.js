@@ -4,53 +4,89 @@
 /* *************************************************************** */
 
 // Código a ejecutar al importar el módulo
-// Cuando termine de cargarse el DOM, se ejecuta la función
-document.addEventListener("DOMContentLoaded", AsignarValidaciones);
 // Agrego un listener al formulario para actualizar el campo next que necesita FormSubmit
-document.querySelector("form").addEventListener("submit", actualizarCampoNext);
+document.querySelector("form").addEventListener("submit", verificarSubmit) 
 
 // ===================================================== //
-// Función: asignarValidaciones                          //
-// Descripción: Asigna a cada campo el texto a nostrar   //
+// Función: vacio                                        //
+// Descripción: Determina si valor es vacío o no         //
 // Parámetros:                                           //
-//      nada                                             //
+//      campo = valor del campo                          //
 // Retorno:                                              //
-//      nada                                             //
+//      ret = TRUE, está vacío                           //
+//           FALSE, no está vacío                        //
 // ===================================================== //
-function AsignarValidaciones() {
-  validarCampo('nombre', 'Por favor complete el campo');
-  validarCampo('apellido', 'Por favor complete el campo');
-  validarCampo('email', 'Por favor complete el campo con un email válido');
-  validarCampo('comentario', 'Por favor complete el campo');
+function vacio(campo) {
+  // Saco espacios y me aseguro que tenga valor
+  campo = (campo == undefined) ? "" : campo.trim();
+
+  return (campo.length === 0);
 }
 
 // ===================================================== //
-// Función: validarCampo                                 //
-// Descripción: Asigna el texto a mostrar cuando 'campo' //
-//              no tiene datos                           //
+// Función: camposOK                                     //
+// Descripción: Verifica si los campos están completos   //
+//              y correctos, de lo contrario resalta     //
+//              en rojo el campo incorrecto y no envía   //
+//              el formulario                            //
 // Parámetros:                                           //
-//      id = id del campo a validar                      //
-//      mensaje = texto a mostrar                        //
-// Retorno:                                              //
 //      nada                                             //
+// Retorno:                                              //
+//      ret = TRUE, los campos estás correctos           //
+//           FALSE, al menos un campo no está correcto   //
 // ===================================================== //
-function validarCampo(id, mensaje) {
-  var input = document.getElementById(id);
+function camposOK(evento) {
+  let ok = true;
+  let nombre = document.getElementById('nombre');
+  let apellido = document.getElementById('apellido');
+  let email = document.getElementById('email')
+  let comentario = document.getElementById('comentario');
 
-  input.addEventListener('input', function(evt) {
-      this.setCustomValidity('');
-    });
+  // Verifico el campo 'nombre'
+  if (vacio(nombre.value))
+  {
+    nombre.classList.add("campo_error");
+    ok = false;
+  } else {
+    nombre.classList.remove("campo_error");
+  }
 
-  input.addEventListener('invalid', function(evt) {
-      // Required
-      if (this.validity.valueMissing) {
-        this.setCustomValidity(mensaje);
+  // Verifico el campo 'apellido'
+  if (vacio(apellido.value))
+  {
+    apellido.classList.add("campo_error");
+    ok = false;
+  } else {
+    apellido.classList.remove("campo_error");
+  }
+
+  // Verifico el campo 'email'
+  if (vacio(email.value))
+  {
+    email.classList.add("campo_error");
+    ok = false;
+  } else {
+      // Verifico que el email esté correcto, con una expresión regular
+      let expr = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+      if ( !expr.test(email.value) )
+      {
+        email.classList.add("campo_error");
+        ok = false;        
       } else {
-        if (!(this.validity.valid)) {
-          this.setCustomValidity(mensaje);
-        }  
+          email.classList.remove("campo_error");        
       }
-    });
+  }
+
+  // Verifico el campo 'comentario'
+  if (vacio(comentario.value))
+  {
+    comentario.classList.add("campo_error");
+    ok = false;
+  } else {
+    comentario.classList.remove("campo_error");
+  }
+
+  return ok;
 }
 
 // ===================================================== //
@@ -67,7 +103,7 @@ function actualizarCampoNext() {
   let next = document.getElementById("next");
   let usuario = document.getElementById("nombre");
 
-  let listaCadena = location.pathname.split("/");
+   let listaCadena = location.pathname.split("/");
   for (let i=0; i<listaCadena.length-1; i++)
   {
     ret += listaCadena[i] + "/";
@@ -75,4 +111,24 @@ function actualizarCampoNext() {
 
   next.value = `${location.origin}${ret}registroContacto.html?nombre=${usuario.value}`;
   //next.value = location.pathname + "/registroContacto.html?nombre=" + usuario.value;
+}
+
+// ===================================================== //
+// Función: verificarSubmit                              //
+// Descripción: Verifica si se puede realizar el submit  //
+// Parámetros:                                           //
+//      evento = evento generado al llamar a la función  //
+// Retorno:                                              //
+//      nada                                             //
+// ===================================================== //
+function verificarSubmit(evento) {
+  // Valido los campos
+  if (camposOK())
+  {
+    // Actualizo el campo Next para el envío del mail
+    actualizarCampoNext();
+  } else {
+    // Evito enviar el formulario
+    evento.preventDefault();
+  }
 }
